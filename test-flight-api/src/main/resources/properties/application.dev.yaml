@@ -1,0 +1,8 @@
+http:
+  port: "8081"
+  
+DB:
+  password: "![Qvg+/L86Aw7HxUc+4uszNw==]"
+  
+api:
+  id: "20648843"

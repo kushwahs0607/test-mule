@@ -1,0 +1,22 @@
+#%RAML 1.0 SecurityScheme
+type: x-client-id-enforcement
+description: Client ID and Client Secret based authentication
+describedBy:
+  headers:
+    client_id:
+      type: string
+      required: true
+      description: Client ID from Anypoint Platform
+    client_secret:
+      type: string
+      required: true
+      description: Client Secret from Anypoint Platform
+  responses:
+    401:
+      description: Unauthorized
+      body:
+        application/json:
+          example:
+            {
+              "message": "Invalid client credentials"
+            }
